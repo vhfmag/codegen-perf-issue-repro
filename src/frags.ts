@@ -63,13 +63,5 @@ const J = gql`
 const K = gql`
   fragment K on User {
     k
-    ...L
-  }
-`;
-const L = gql`
-  fragment L on User {
-    l
-    id
-    username
   }
 `;
