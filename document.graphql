@@ -1,0 +1,18 @@
+fragment A on User { ...B }
+fragment B on User { ...C }
+fragment C on User { ...D }
+fragment D on User { ...E }
+fragment E on User { ...F }
+fragment F on User { ...G }
+fragment G on User { ...H }
+fragment H on User { ...I }
+fragment I on User { ...J }
+fragment J on User { ...K }
+fragment K on User { ...L }
+fragment L on User { id, username }
+
+query user {
+    user(id: 1) {
+        ...A
+    }
+}
